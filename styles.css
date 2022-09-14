@@ -167,6 +167,15 @@ button {
   margin-bottom: 30px;
 }
 
+.card h3 {
+  width: 50%;
+}
+
+.card p {
+  width: 20%;
+  text-align: right;
+}
+
 #modal-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -188,5 +197,12 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+
+  .card h3,
+  .card p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
