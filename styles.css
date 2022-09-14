@@ -194,6 +194,14 @@ button {
   color: white;
 }
 
+.accordion-body {
+  font-size: 1.1rem;
+}
+
+.accordion-button {
+  font-size: 1.1rem;
+}
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
