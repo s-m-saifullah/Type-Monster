@@ -120,15 +120,16 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                JavaScript is a single threaded programming language. That means
+                it cannot run more than one command simultaneously. So, if some
+                code takes time to execute, codes below that would stuck. To
+                solve this issue event loop was introduced. When a certain code
+                takes time to execute that code/ function moves to
+                <strong>thread pool</strong>. After the code excutes in the
+                thread pool it is moved to the <strong>callback queue</strong>.
+                When the <strong>call stack</strong> executes all the codes it
+                takes input from the call back queue. Event loop has the
+                responsibility to push items from call back queue to call stack.
               </div>
             </div>
           </div>
@@ -155,15 +156,22 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <strong>undefined</strong> is data type in JavaScript. It can be
+                produced in different ways: <br />
+                <ul>
+                  <li>If a variable is being used without initialization.</li>
+                  <li>If a function has no return.</li>
+                  <li>
+                    If a function parameter isn't passed when the function is
+                    called.
+                  </li>
+                  <li>
+                    If we try to access a property of an object or an array
+                    which is not there.
+                  </li>
+                  <li>If undefined is set as a value of a variable.</li>
+                  <li>If we try to delete an element of an array.</li>
+                </ul>
               </div>
             </div>
           </div>
