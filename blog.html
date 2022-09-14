@@ -47,15 +47,14 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Both <strong>localStorage</strong> and
+                <strong>sessionStorage</strong> are browser based data storing
+                mechanism. Even though they work allmost similarly, there is one
+                key difference between them. <br />
+                <strong>localStorage</strong> data has no expiration date. They
+                are available even if the browser is closed. On the other hand,
+                <strong>sessionStoage</strong> has expiration time. They will be
+                lost as soon as the tab or browser is closed. <br />
               </div>
             </div>
           </div>
@@ -70,7 +69,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                What is the difference between global storage and local storage?
+                What is the difference between global scope and block scope?
               </button>
             </h2>
             <div
@@ -80,15 +79,22 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Scope is a feature of variables. There are two types of scope:
+                <strong>global scope</strong> and
+                <strong>block scope</strong> or <strong>local scope</strong>.
+                <br />
+                If a variable is declared in the
+                <strong>global scope</strong> that is called a
+                <strong>global variable</strong>. A global variable can be
+                defined anywhere in the JavaScript code and can be accessed from
+                anywhere. global variable can be declared with
+                <strong>var</strong> keyword <br />
+                If a variable is declared in the
+                <strong>block/ local scope</strong> that is called a
+                <strong>local variable</strong>. A local variable can only be
+                visible within two braces: function, if block, else block etc.
+                Local variables can be declared with <strong>let</strong> or
+                <strong>const</strong> keyword.
               </div>
             </div>
           </div>
