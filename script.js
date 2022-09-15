@@ -118,6 +118,7 @@ const start = () => {
 
     // finished timer
     if (count === 0) {
+      countdownOverlay.innerHTML = "";
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
@@ -146,3 +147,10 @@ setInterval(() => {
     startTime ? timeSpent : 0
   } seconds`;
 }, 1000);
+
+// Prevent Spacebar from scrolling the page
+window.addEventListener("keydown", (e) => {
+  if (e.key === " " && e.target == document.body) {
+    e.preventDefault();
+  }
+});
