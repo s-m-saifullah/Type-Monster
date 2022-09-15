@@ -73,7 +73,8 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = ((finishTime - startTime) / 1000).toFixed(0);
-
+  const words = questionText.split(" ");
+  const wpm = ((words.length * 60) / timeTaken).toFixed(0);
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -87,10 +88,11 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p>Speed: ${wpm} WPM</p>
     <button onclick="closeModal()">Close</button>
   `;
 
-  addHistory(questionText, timeTaken, errorCount);
+  addHistory(questionText, timeTaken, errorCount, wpm);
 
   // restart everything
   startTime = null;
